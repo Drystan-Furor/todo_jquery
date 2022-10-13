@@ -1,0 +1,82 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: Verdana,serif;
+    text-transform: capitalize;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(45deg, rgb(15, 15, 15) 50%, #45CEF7 40%);
+}
+
+.container{
+    height: 450px;
+    width: 330px;
+    background: linear-gradient(45deg, #45CEF7 1%, #EE8600 40%);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+    margin: 50px;
+}
+
+#input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #767676;
+    color: #fff;
+    padding: 0 10px;
+    margin: 15px 0;
+}
+
+#input::placeholder{
+    color: #EE8600;
+}
+
+ul li{
+    background: #eee;
+    color: rgb(15, 15, 15);
+    height: 40px;
+    border: 50px;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+}
+
+ul .fa-check, .fa-trash{
+    position: absolute;
+    cursor: pointer;
+
+}
+
+ul .fa-check {
+    right: 40px;
+    color: green;
+}
+
+ul .fa-trash {
+    right: 15px;
+    color: #d41e1e;
+}
+
+ul .checked {
+    background: lightgreen;
+    color: #767676;
+    text-decoration: line-through;
+    transition: .2s;
+}
+
+ul .trashed {
+    background: #767676;
+    color: #d41e1e;
+    text-decoration: line-through;
+    transition: .2s;
+}
